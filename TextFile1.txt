@@ -24,7 +24,7 @@ curl -X DELETE https://www.strava.com/api/v3/push_subscriptions/192070 -F client
 curl -X DELETE https://www.strava.com/api/v3/push_subscriptions/192072 -F client_id=38221 -F client_secret=7fd80b410ecda2345355cca1e83e346de49dd484 -F callback_url=https://7ca75adff11a.ngrok.io/Strava -F verify_token=STRAVA
 
 
-
+Added a comment
 
 
 
