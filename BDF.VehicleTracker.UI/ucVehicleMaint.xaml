@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="BDF.VehicleTracker.UI.ucMaintainVehicle"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BDF.VehicleTracker.UI"
+             mc:Ignorable="d" 
+          d:DesignHeight="30" d:DesignWidth="260">
+    <Grid>
+        <Label x:Name="lblAttribute" Content="Colors:" HorizontalAlignment="Left" Margin="0,5,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Image  x:Name="imgDelete" 
+                Source="pack://siteoforigin:,,,/Resources/delete.png"
+                HorizontalAlignment="Left" Margin="200,6,0,3"
+                VerticalAlignment="Top"
+                Width="19" Height="21" Stretch="Fill"/>
+        <ComboBox x:Name="cboAttribute" HorizontalAlignment="Left" Margin="46,5,0,0" VerticalAlignment="Top" Width="146"/>
+    </Grid>
+</UserControl>

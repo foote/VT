@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[tblLeaderBoard]
+(
+	[Id] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY, 
+    [UserName] VARCHAR(50) NOT NULL, 
+    [GameTime] DATETIME NOT NULL, 
+    [Score] INT NOT NULL
+)

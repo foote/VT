@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BDF.VehicleTracker.BL.Models\BDF.VehicleTracker.BL.Models.csproj" />
+    <ProjectReference Include="..\BDF.VehicleTracker.PL\BDF.VehicleTracker.PL.csproj" />
+    <ProjectReference Include="..\BDF.VehicleTracker.Reporting\BDF.VehicleTracker.Reporting.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,30 @@
+Scaffold-DbContext "Server=(localdb)\ProjectsV13;Database=BDF.VehicleTracker.DB;Integrated Security=True" Microsoft.EntityFrameworkCore.SqlServer --use-database-names --force
+
+
+Microsoft.AspNetCore.TestHost
+
+
+ngrok http https://localhost:44394 -host-header="localhost:44394"
+ngrok http https://localhost:44354 -host-header="localhost:44354"  
+
+
+Added SQL Server logging
+Install-Package Serilog
+Install-Package Serilog.Settings.Configuration
+Install-Package Serilog.Sinks.MSSqlServer
+Install-Package Serilog.Extensions.Logging;
+
+
+curl -X DELETE https://www.strava.com/api/v3/push_subscriptions/192070 -F client_id=38221 -F client_secret=7fd80b410ecda2345355cca1e83e346de49dd484 -F callback_url=https://vehicletrackerapi.azurewebsites.net/Strava -F verify_token=STRAVA
+
+curl -X POST https://www.strava.com/api/v3/push_subscriptions -F client_id=38221 -F client_secret=7fd80b410ecda2345355cca1e83e346de49dd484 -F callback_url=https://b5f4c771ec4e.ngrok.io/Strava -F verify_token=STRAVA
+
+curl -X DELETE https://www.strava.com/api/v3/push_subscriptions/192070 -F client_id=38221 -F client_secret=7fd80b410ecda2345355cca1e83e346de49dd484 -F callback_url=https://vehicletrackerapi.azurewebsites.net/Strava -F verify_token=STRAVA
+
+curl -X DELETE https://www.strava.com/api/v3/push_subscriptions/192072 -F client_id=38221 -F client_secret=7fd80b410ecda2345355cca1e83e346de49dd484 -F callback_url=https://7ca75adff11a.ngrok.io/Strava -F verify_token=STRAVA
+
+
+
+
+
+
